@@ -223,4 +223,4 @@ Network     -> ربط Services ببعضها
 
 ## الترخيص
 
-لم يتم تحديد ترخيص لهذا المستودع بعد. أضف ملف `LICENSE` إذا كنت تريد تحديد شروط استخدام المحتوى بوضوح.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
