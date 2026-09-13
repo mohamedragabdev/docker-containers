@@ -1,0 +1,27 @@
+services:
+  web-laravel: 
+    build: .
+    volumes:
+      - /path_to_your_project:/app
+    networks:
+      - backend-net
+    ports:
+      - 8000:8000
+  
+  mysql-db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=DATABASE_NAME
+      - MYSQL_USER=USER_NAME
+      - MYSQL_PASSWORD=USER_PASSWORD
+    volumes:
+      - db-vol:/var/lib/mysql
+    networks:
+      - backend-net
+
+networks:
+  backend-net:
+
+volumes:
+  db-vol:
